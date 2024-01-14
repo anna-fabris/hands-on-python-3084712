@@ -1,3 +1,7 @@
+# Loops in python are mainly of 2 types: 
+# 1) While loops
+# 2) For...in (more popular, less bug prone and more readable)
+
 NAMES = ["John", "Paul", "George", "Ringo"]
 AGES = [20, 21, 22, 23]
 
@@ -18,4 +22,6 @@ for name in reversed(NAMES):
 for i in range(5):
     print(i)
 
-# enumerate
+# enumerate (to keep track of the iter number)
+for i, name in enumerate(NAMES):
+    print(f"{i} {name}")
